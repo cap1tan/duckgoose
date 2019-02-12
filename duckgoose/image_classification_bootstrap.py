@@ -170,6 +170,7 @@ def downloadImagesFor(keyword, prefix=None, common_arguments={}):
                     # remove original
                     os.remove(fpath)
             except:
+                os.remove(fpath)
                 continue
     print('Done')
 
